@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos | Enigma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+  <header class="encabezado">
+    <div class="logo">
+        <video src="Logo.mp4" autoplay loop muted></video>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../FrontPage/proyecto.html">Principal</a></li>
+            <li><a href="../Store/index.html">Tienda</a></li>
+            <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <a href="contactanos.html" class="btn"><button>Contactanos</button></a>
+    <div class="cart-icon" style="visibility:hidden">
+        <i class="bi bi-cart"></i>
+        <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+    
+    
+    <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 bg-dark-custom p-10 rounded-2xl shadow-xl">
+      
+      <div>
+        <h1 class="text-4xl font-bold text-pink-500 mb-6">Contáctanos</h1>
+        <p class="text-gray-300 mb-6">¿Tienes alguna duda o consulta? Estamos aquí para ayudarte.</p>
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <span class="text-pink-400 text-xl">✉️</span>
+            <span class="text-gray-200">contacto@enigmatech.com</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-pink-400 text-xl">📞</span>
+            <span class="text-gray-200">+51 987 654 321</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-pink-400 text-xl">📍</span>
+            <span class="text-gray-200">Av. Innovación 123, Lima, Perú</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Nombre" class="bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+          <input type="text" placeholder="Apellido" class="bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400">
+        </div>
+        <input type="email" placeholder="Correo electrónico" class="w-full bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+        <textarea placeholder="Escribe tu mensaje aquí..." rows="4" class="w-full bg-gray-800 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400" required></textarea>
+        <div class="flex justify-between items-center">
+          <div class="text-gray-500 text-sm">Protegido por reCAPTCHA</div>
+          <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-md transition">Enviar</button>
+        </div> 
+
+
+  <div class="max-w-5xl w-full mt-8 rounded-2xl overflow-hidden shadow-xl">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.970411403449!2d-76.95522002576757!3d-12.045556788191154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c68826cec0c3%3A0xf6df8bcd4e0a5fcf!2sTecsup!5e0!3m2!1ses!2spe!4v1749351992585!5m2!1ses!2spe"
+      width="100%" 
+      height="450" 
+      style="border:0; border-radius: 12px;"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div> 
+      </form>
+    </div>
+  </div>
+
+
+  <footer>
+    &copy; 2025 Enigma. Todos los derechos reservados.
+</footer>
+</body>
+</html>

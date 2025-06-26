@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <video src="Logo.mp4" autoplay loop muted></video>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                
+                <li><a href="../FrontPage/proyecto.html">Principal</a></li>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <a href="../Contactus/contactanos.html" class="btn"><button>Contactanos</button></a>
+        <div class="cart-icon">
+            <i class="bi bi-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <div class="main-layout">
+        <button class="sidebar-toggle" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="main-links">
+                    <li><a href="#" class="sidebar-item active" data-content="procesador"><i class="bi bi-cpu"></i> Procesador</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="placa"><i class="bi bi-motherboard"></i> Placa Madre</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="memoria"><i class="bi bi-memory"></i> Memoria</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="almacena"><i class="bi bi-device-ssd"></i> Almacenamiento</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="video"><i class="bi bi-gpu-card"></i> Tarjeta de Video</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="cooler"><i class="bi bi-fan"></i> Cooler</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="fuente"><i class="bi bi-plug"></i> Fuente de Poder</a></li>
+                    <li><a href="#" class="sidebar-item" data-content="Customs"><i class="bi bi-pc"></i> Case</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content-area">
+            <section id="procesador" class="content-pane active">
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="i9.jpg" alt="proc1">
+                            <h2 class="product-title">Intel Core Ultra 9 285K 8N 16Th</h2>
+                            <p class="product-price">S/. 2,558.34</p>
+                            <button class="add-to-cart" data-id="1" data-name="Intel Core Ultra 9 285K 8N 16Th" data-price="2558.34">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="i7.jpg" alt="proc2">
+                            <h3 class="product-title">Intel Core Ultra 7 265KF 8N 12TH</h3>
+                            <p class="product-price">S/. 1,500.60 ($ 410.00)</p>
+                            <button class="add-to-cart" data-id="2" data-name="Intel Core Ultra 7 265KF 8N 12TH" data-price="1500.60">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="i5.jpg" alt="proc3">
+                            <h3 class="product-title">Intel Core Ultra 5 245K 8N 14TH</h3>
+                            <p class="product-price">S/. 1,409.10 ($ 385.00)</p>
+                            <button class="add-to-cart" data-id="3" data-name="Intel Core Ultra 5 245K 8N 14TH" data-price="1409.10">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="placa" class="content-pane">
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="asus.jpg" alt="placa1">
+                            <h2 class="product-title">ASUS Rog Maximus Z790 Hero DDR5</h2>
+                            <p class="product-price">S/. 2,423.50 ($ 655.00)</p>
+                            <button class="add-to-cart" data-id="4" data-name="ASUS Rog Maximus Z790 Hero DDR5" data-price="2423.50">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="aourus.jpg" alt="placa2">
+                            <h3 class="product-title">AORUS Z790 Pro X WIFI 7 DDR5</h3>
+                            <p class="product-price">S/. 1,628.00 ($ 440.00)</p>
+                            <button class="add-to-cart" data-id="5" data-name="AORUS Z790 Pro X WIFI 7 DDR5" data-price="1628.00">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="msi.jpg" alt="placa3">
+                            <h3 class="product-title">MSI Z890 Tomahawk WIFI 7 DDR5</h3>
+                            <p class="product-price">S/. 1,424.50 ($ 385.00)</p>
+                            <button class="add-to-cart" data-id="6" data-name="MSI Z890 Tomahawk WIFI 7 DDR5" data-price="1424.50">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="memoria" class="content-pane">
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="corsair.jpg" alt="ram1">
+                            <h2 class="product-title">Dominator Titanium 96GB (2x48 GB) DDR5</h2>
+                            <p class="product-price">S/. 1,562.59 ($ 427.99)</p>
+                            <button class="add-to-cart" data-id="7" data-name="Dominator Titanium 96GB (2x48 GB) DDR5" data-price="1562.59">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="trident.jpg" alt="ram2">
+                            <h3 class="product-title">G.Skill Trident Z5 32 GB (2X16 GB) DDR5</h3>
+                            <p class="product-price">S/. 754.39 ($ 208.15)</p>
+                            <button class="add-to-cart" data-id="8" data-name="G.Skill Trident Z5 32 GB (2X16 GB) DDR5" data-price="754.39">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="patriot.jpg" alt="ram3">
+                            <h3 class="product-title">Patriot Viper 32 GB (2X16 GB) DDR5</h3>
+                            <p class="product-price">S/. 1,380.38 ($ 380.87)</p>
+                            <button class="add-to-cart" data-id="9" data-name="Patriot Viper 32 GB (2X16 GB) DDR5" data-price="1380.38">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="almacena" class="content-pane">
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="samsung.jpg" alt="store1">
+                            <h2 class="product-title">SSD Samsung 980 1TB M.2 2280 NVME</h2>
+                            <p class="product-price">S/. 509.90 ($ 140.69)</p>
+                            <button class="add-to-cart" data-id="10" data-name="SSD Samsung 980 1TB M.2 2280 NVME" data-price="509.90">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="Western Digital.png" alt="store2">
+                            <h3 class="product-title">SSD Western Digital SN850X 2TB M.2 NVME</h3>
+                            <p class="product-price">S/. 754.39 ($ 208.15)</p>
+                            <button class="add-to-cart" data-id="11" data-name="SSD Western Digital SN850X 2TB M.2 NVME" data-price="754.39">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="kingston.jpg" alt="store3">
+                            <h3 class="product-title">SSD Kingston NV3 2TB M.2 NVME</h3>
+                            <p class="product-price">S/. 494.10 ($ 136.33)</p>
+                            <button class="add-to-cart" data-id="12" data-name="SSD Kingston NV3 2TB M.2 NVME" data-price="494.10">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="video" class="content-pane">
+                <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="5090.jpg" alt="store1">
+                            <h2 class="product-title">ASUS GeForce RTX 5090 32GB </h2>
+                            <p class="product-price">S/. 12,125.50 ($ 3,295.00)</p>
+                            <button class="add-to-cart" data-id="13" data-name="ASUS GeForce RTX 5090 32GB" data-price="12125.50">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="rx 9070.png" alt="store2">
+                            <h3 class="product-title">AMD Radeon RX 9070 XT 16GB GDDR6</h3>
+                            <p class="product-price">S/. 3,860.14 ($ 1,048.95)</p>
+                            <button class="add-to-cart" data-id="14" data-name="AMD Radeon RX 9070 XT 16GB GDDR6" data-price="3860.14">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="arc.jpg" alt="store3">
+                            <h3 class="product-title">Intel Tarjeta gráfica Arc A770 Limited Edition 16GB</h3>
+                            <p class="product-price">S/. 2,170.90 ($ 598.99)</p>
+                            <button class="add-to-cart" data-id="15" data-name="Intel Arc A770 Limited Edition 16GB" data-price="2170.90">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cooler" class="content-pane">
+              <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="msicooler.jpg" alt="cooler1">
+                            <h2 class="product-title">Rog RYUO III 360</h2>
+                            <p class="product-price">S/. 829.67 ($ 231.00)</p>
+                            <button class="add-to-cart" data-id="16" data-name="Rog RYUO III 360" data-price="829.67">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="masterliquid.jpg" alt="cooler2">
+                            <h3 class="product-title">Cooler Master MasterLiquid 360 Atmos</h3>
+                            <p class="product-price">S/. 628.54 ($ 175.00)</p>
+                            <button class="add-to-cart" data-id="17" data-name="Cooler Master MasterLiquid 360 Atmos" data-price="628.54">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="msimag.jpg" alt="cooler3">
+                            <h3 class="product-title">Mag Coreliquid E360 Monster Hunter Edition</h3>
+                            <p class="product-price">S/. 585.44 ($ 163.00)</p>
+                            <button class="add-to-cart" data-id="18" data-name="Mag Coreliquid E360 Monster Hunter Edition" data-price="585.44">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fuente" class="content-pane">
+              <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="thor1600t.jpg" alt="fuente1">
+                            <h2 class="product-title">ASUS Rog Thor 1600T 80 PLUS Titaniumx</h2>
+                            <p class="product-price">S/. 2,636.09 ($ 733.95)</p>
+                            <button class="add-to-cart" data-id="19" data-name="ASUS Rog Thor 1600T 80 PLUS Titaniumx" data-price="2636.09">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="ax1600i.jpg" alt="fuente2">
+                            <h3 class="product-title">Corsair Serie AX1600i 80 PLUS Titaniumx</h3>
+                            <p class="product-price">S/. 2,190.87 ($ 609.99)</p>
+                            <button class="add-to-cart" data-id="20" data-name="Corsair Serie AX1600i 80 PLUS Titaniumx" data-price="2190.87">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="1500titaniummaster.jpg" alt="fuente3">
+                            <h3 class="product-title">Cooler Master MasterWatt Maker 1500</h3>
+                            <p class="product-price">S/. 1,616.21 ($ 449.99)</p>
+                            <button class="add-to-cart" data-id="21" data-name="Cooler Master MasterWatt Maker 1500" data-price="1616.21">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Customs" class="content-pane">
+              <div class="container">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="fishtank.jpg" alt="case1">
+                            <h2 class="product-title">Fishtank Showcase Panorama</h2>
+                            <p class="product-price">S/. 4,866.69 ($ 1,355.00)</p>
+                            <button class="add-to-cart" data-id="22" data-name="Fishtank Showcase Panorama" data-price="4866.69">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="vortex.jpg" alt="case2">
+                            <h3 class="product-title">Vortex Extreme Cooling Performance</h3>
+                            <p class="product-price">S/. 5,635.30 ($ 1,569.00)</p>
+                            <button class="add-to-cart" data-id="23" data-name="Vortex Extreme Cooling Performance" data-price="5635.30">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="custom.jpg" alt="case3">
+                            <h3 class="product-title">Explorer Art Meets Technology</h3>
+                            <p class="product-price">S/. 5,195.00 ($ 405.00)</p>
+                            <button class="add-to-cart" data-id="24" data-name="Explorer Art Meets Technology" data-price="5195.00">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carrito de compras (inicialmente oculto) -->
+        <div class="cart-modal" id="cart-modal">
+            <div class="cart-content">
+                <span class="close-modal">&times;</span>
+                <h2>Tu Carrito de Compras</h2>
+                <div class="cart-items" id="cart-items">
+                    <!-- Los items del carrito se agregarán aquí dinámicamente -->
+                    <p class="empty-cart-message">Tu carrito está vacío</p>
+                </div>
+                <div class="cart-total">
+                    <p>Total: <span id="cart-total">S/. 0.00</span></p>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Proceder al Pago</button>
+                <button class="clear-cart-btn" id="clear-cart-btn">Vaciar Carrito</button>
+            </div>
+        </div>
+        
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+    &copy; 2025 Enigma. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
