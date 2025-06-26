@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+
+/* Barra de Navegación */
+
+
+.encabezado {
+    background-color: #000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 15px 10%;
+    border-bottom: 1px solid #333;   
+}
+.logo video {
+    width: 150px;
+    height: 100px;
+}
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links a {
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.nav-links li a:hover{
+    color: rgb(255, 19, 157);
+    text-shadow: 0 0 25px #8226fa,
+    0 0 55px #8226fa,
+    0 0 80px #8226fa,
+    0 0 95px #8226fa,
+    0 0 1500px #8226fa;
+    
+}
+
+.btn button {
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn button:hover {
+    transform: scale(1.1);
+    color: rgb(255, 19, 157);
+
+}
+
+
+/* Carrusel */
+
+
+.imagenestienda {
+    margin: 20px;
+    width: 98%;
+    height: 100%;
+    color: white;
+}
+
+.imagenestienda h2{
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.imagenestienda img {
+    height: 900px;
+    width: 1200px;
+
+}
+
+/* Información extra */
+/*Productos*/
+.Popular {
+    margin:20px;
+    color: rgb(255, 255, 255);
+}
+.Popular h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:wavy;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+    padding: 8px;
+    margin: 20px;
+}
+
+.prod {
+    background-color: rgb(39, 39, 39);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(161, 161, 161, 0.1);
+}
+
+.produci {
+    position: relative;
+    width: 100%;
+    
+}
+.produci img {
+    height: 400px;
+    width: 350px;
+    aspect-ratio: 1 / 1;
+}
+.price {
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+}
+.description {
+    padding: 5px;
+    color: white;
+}
+.stock {
+    color: rgb(163, 163, 163);
+    padding: 5px;
+}
+.free{
+    color: rgb(116, 194, 0);
+    font-size: 0.8em; 
+    padding: 5px;
+}
+
+.but3 button {
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 30px;
+}
+.but3 button:hover {
+    transform: scale(1.1);
+    color: rgb(0, 134, 175);
+
+}
+
+/*Info*/
+.main {
+    margin: 20px 20px;
+    width: 98%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nosotros {
+    align-self: flex-end;
+}
+.Nosotros h2{
+    font-size: 50px;
+
+}
+.historia{
+    width: 70%;
+    height: 100%;
+    color: white;
+
+}
+.historia h2 {
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.historia p {
+    margin: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+.btn1{
+    padding: 40px;
+    text-align: center;
+}
+
+.btn1 button{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn1 button:hover {
+    transform: scale(1.1);
+    color: rgb(0, 134, 175);
+
+}
+
+
+/* Noticias */
+
+
+.aside{
+    background-color: #333;
+    width: 25%;
+    height: 100%;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+table {
+    border-collapse: collapse;
+    border-color: white;
+    border-radius: 55px;
+}
+.tabla td, tr{
+    padding: 15px;
+
+}
+.tabla a{
+    text-decoration: none;
+    color: white;
+}
+
+.tabla a:hover{
+    color: rgb(73, 255, 194);
+    font-size: 15px;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+
+@media (max-width: 1980px){
+    .encabezado{
+        flex-direction: row;
+        text-align:right;
+        height: 100px;
+    }
+    .encabezado .carrito img{
+        flex-direction:left;
+        text-align: end;
+    }
+    .imagenestienda img {
+        align-items: center;
+        width: 1300px;
+        height: 900px;
+    }}
+
+
+    @media (max-width: 1440px){
+        .encabezado{
+            flex-direction: row;
+            text-align:right;
+            height: 100px;
+        }
+        .encabezado .carrito img{
+            flex-direction:left;
+            text-align: end;
+        }
+        .imagenestienda img {
+            align-items: center;
+            width: 1300px;
+            height: 900px;
+        }
+    }
+@media (max-width: 1366px){
+    .encabezado{
+        flex-direction: row;
+        text-align:right;
+        height: 100px;
+    }
+    .encabezado .carrito img{
+        flex-direction:left;
+        text-align: end;
+    }
+    .imagenestienda img {
+        align-items: center;
+        width: 1300px;
+        height: 900px;
+    }
+}
+
+@media (max-width: 880px) {
+    .encabezado{
+        flex-direction: column;
+        text-align:right;
+        height: 250px;
+    }
+    .encabezado .carrito img{
+        flex-direction:left;
+        text-align: end;
+    }
+    .imagenestienda img {
+        align-items: center;
+        width: 350px;
+        height: 300px;
+    }
+}
+@media (max-width: 880px) {
+    .encabezado{
+        flex-direction: column;
+        text-align:right;
+        height: 250px;
+    }
+    .encabezado .carrito img{
+        flex-direction:left;
+        text-align: end;
+    }
+    .imagenestienda img {
+        align-items: center;
+        width: 450px;
+        height: 300px;
+    }
+}
+@media (max-width: 480px) {
+    .encabezado{
+        flex-direction: column;
+        text-align:center;
+        height: 250px;
+    }
+    .encabezado .carrito img{
+        flex-direction:left;
+        text-align: end;
+    }
+    .imagenestienda img {
+        align-items: center;
+        width: 320px;
+        height: 250px;
+
+    }}
